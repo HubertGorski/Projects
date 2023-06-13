@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/app.js" defer></script>
+    <title>Board games: HubVersion</title>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <div class="add-game-box">
+      <div class="game-box-content">
+        <fieldset class="basic">
+          <legend>Basic informations</legend>
+          <div class="title">
+            <label for="title">Game title</label>
+            <input type="text" name="title" id="title" />
+          </div>
+          <div class="image-url">
+            <label for="image-url">Image URL</label>
+            <input type="text" name="image-url" id="image-url" />
+          </div>
+        </fieldset>
+        <fieldset class="rating">
+          <legend>Your rating</legend>
+          <span>1</span>
+          <input type="radio" name="rating" value="1" />
+          <input type="radio" name="rating" value="2" />
+          <input type="radio" name="rating" value="3" />
+          <input type="radio" name="rating" value="4" />
+          <input type="radio" name="rating" value="5" />
+          <span>5</span>
+        </fieldset>
+        <fieldset class="status">
+          <legend>Game status</legend>
+          <div class="status__el">
+            <input type="radio" name="status" value="1" id="status__will" />
+            <label for="status__will">I will buy the game</label>
+          </div>
+          <div class="status__el">
+            <input type="radio" name="status" value="2" id="status__wont" />
+            <label for="status__wont">I won't buy the game</label>
+          </div>
+          <div class="status__el">
+            <input type="radio" name="status" value="3" id="status__have" />
+            <label for="status__have">I have a game</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="game-box-actions">
+        <button class="btn btn--cancel">Cancel</button>
+        <button class="btn btn--ok">Add</button>
+      </div>
+    </div>
+    <div class="menu">
+      <button class="btn add-game-button">New game</button>
+    </div>
+    <div class="desktop">
+      <ul class="games-list"></ul>
+    </div>
+  </body>
+</html>
